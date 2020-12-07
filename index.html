@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quality Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel='shortcut icon' href='favicon.ico?v=2' type='image/x-icon' />
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="body-container flex">
+      <h1 class="logo">
+        <a href="www.qualityproducts.org.in">
+          <img src="./assets/images/logo.png" />
+        </a>
+      </h1>
+      <ul class="nav-bar flex">
+        <li class="active page-link" onclick="onClickMenu('about')">about</li>
+        <li class="page-link" onclick="onClickMenu('products')">products</li>
+        <li class="page-link" onclick="onClickMenu('contact')">contact</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="body-container">
+        <h2><span>about</span></h2>
+        <div class="description">
+          <p>
+            QualityProducts is one of newly launched brand in the FMCG consumable space. QualityProducts has a range of
+            products including Aluminum Kitchen Foil and Aluminium Containers which are 100% recycleable.
+          </p>
+          <p>We are fully committed to the safety and hygiene of our consumers and ensure that all our products maintain
+            the “QualityProducts standards” which include highest quality products with food grading, bacteria
+            resistance and delivery as per mentioned specifications.</p>
+          <p>
+            To further add value to the lives of our consumers we plan to launch other daily consumables in the near
+            future, including tissue papers.
+          </p>
+          <p>We have state of the art manufacturing facility located near Mumbai which is certified as per global
+            standards. Like our products, our manufacturing process and set up is also environment friendly and falls
+            under green category.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="body-container">
+        <h2><span>products</span></h2>
+        <ul class="list flex">
+          <li>
+            <div class="card flex">
+              <h3>QualityProducts Aluminium Kitchen Foil</h3>
+              <p>QualityProducts Aluminium Foil Rolls</p>
+            </div>
+          </li>
+          <li>
+            <div class="card flex">
+              <h3>Foil Containers</h3>
+              <p>QualityProducts Aluminium Foil Containers</p>
+            </div>
+          </li>
+          <li>
+            <div class="card flex">
+              <h3>Foil Containers</h3>
+              <p>QualityProducts Aluminium Foil Containers</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="body-container">
+        <h2><span>contact</span></h2>
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/DFeNIYTH?typeform-medium=embed-snippet"
+          style="width: 100%; height: 500px;"></div>
+        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      QUALITY PRODUCTS <span class="highlight">&copy;
+        <script>document.write(new Date().getFullYear())</script></span>
+    </p>
+  </footer>
+</body>
+
+</html>

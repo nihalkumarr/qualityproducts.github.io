@@ -1,0 +1,316 @@
+/* ================================================================
+  1. CSS Reset Code
+
+  http://meyerweb.com/eric/tools/css/reset/
+===================================================================*/
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, address, cite, dfn, img, ol, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, nav, section, summary, audio, video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font: inherit;
+  outline: none;
+  vertical-align: baseline;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol, ul { list-style: none; }
+
+.container-fluid {
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.form-control,
+.btn {
+  border-radius: 0;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+      
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("../fonts/Raleway-Bold.ttf");
+}
+  
+body {
+  font-family: "Raleway";
+  font-size: 8pt;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  overflow-x: hidden;
+  text-align: center;
+}
+  
+.button {
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13pt;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  border: 2px solid #000;
+  background: #000;
+  color: #ffda00;
+}
+
+.button:hover {
+  border: 2px solid #ffda00;
+  background: #ffda00;
+  color: #000;
+}
+
+.button .mdi {
+  vertical-align: middle;
+}
+  
+.flex  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-container {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 15px 0;
+  background: #000;
+  color: #ffda00;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+header h1.logo a img {
+  max-width: 40px;
+  width: 100%;
+}
+
+header ul li {
+  margin-right: 35px;
+  cursor: pointer;
+  background-image: linear-gradient(180deg, transparent 45%, #ffda00 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-size .4s ease;
+}
+
+header ul li:hover {
+  background-image: linear-gradient(180deg, transparent 45%, #fff 0);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-size .6s ease;
+}
+
+header h1, header ul {
+  margin: 0;
+}
+
+main {
+  padding-top: 72px;
+}
+
+main section {
+  padding: 40px 0;
+}
+
+main section:nth-child(2n) {
+  background: #ffda00;
+}
+
+main section:nth-child(2n) h2 span {
+  border-bottom: 4px solid #fff;
+}
+
+main section h2 {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main section h2 span {
+  border-bottom: 4px solid #ffda00;
+}
+
+main section .description p {
+  padding-bottom: 15px;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+main section .list {
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+main section .list li {
+  width: 300px;
+  height: 250px;
+  cursor: pointer;
+}
+
+main section .list li:nth-child(1) {
+  background: url('../images/aluminium-foil.jpeg') center center/cover;
+}
+
+main section .list li:nth-child(2) {
+  background: url('../images/foil-container.jpeg') center center/cover;
+}
+
+main section .list li:nth-child(3) {
+  background: url('../images/foil-container-oval.jpeg') center center/cover;
+}
+
+main section .list li .card {
+  opacity: 0;
+  visibility: hidden;
+  height: 250px;
+  justify-content: center;
+  flex-direction: column;
+  background: #eee;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+}
+
+main section .list li .card h3 {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main section .list li .card p {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+main section .list li:hover .card {
+  visibility: visible;
+  opacity: 1;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  height: 34px;
+  padding-left: 10px;
+}
+
+form textarea {
+  height: 75px;
+  padding: 10px 0 0 10px;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#success {
+  display: none;
+}
+
+#success.expand {
+  display: block;
+}
+
+footer {
+  height: 72px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #ffda00;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+section#contact .typeform-widget .ebrHDR {
+  display: none !important;
+}
+
+@media(max-width: 800px) {
+  main section .list {
+    max-width: 625px;
+    flex-wrap: wrap;
+  }
+
+  main section .list li {
+    margin-bottom: 25px;
+  }
+}
+
+@media(max-width: 650px) {
+  main section .list {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+}
