@@ -166,8 +166,33 @@ header h1, header ul {
   margin: 0;
 }
 
+header .mobile-nav-bar {
+  display: none;
+}
+
+header .mobile-nav-bar a {
+  color: #ffda00;
+}
+
+header ul.dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
+header ul.dropdown-menu li:hover {
+  background: #ffda00;
+  color: #000;
+}
+
+header ul.dropdown-menu li {
+  padding: 10px;
+  margin: 0;
+}
+
 main {
   padding-top: 72px;
+  position: relative;
+  z-index: -1;
 }
 
 main section {
@@ -297,6 +322,14 @@ section#contact .typeform-widget .ebrHDR {
 }
 
 @media(max-width: 800px) {
+  header ul.nav-bar {
+    display: none !important;
+  }
+
+  header .mobile-nav-bar {
+    display: block;
+  }
+
   main section .list {
     max-width: 625px;
     flex-wrap: wrap;

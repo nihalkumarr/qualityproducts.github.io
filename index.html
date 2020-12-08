@@ -10,7 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
     rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel='shortcut icon' href='favicon.ico?v=2' type='image/x-icon' />
 
   <!-- JS -->
@@ -25,7 +26,7 @@
   <header>
     <div class="body-container flex">
       <h1 class="logo">
-        <a href="www.qualityproducts.org.in">
+        <a href="/">
           <img src="./assets/images/logo.png" />
         </a>
       </h1>
@@ -34,7 +35,16 @@
         <li class="page-link" onclick="onClickMenu('products')">products</li>
         <li class="page-link" onclick="onClickMenu('contact')">contact</li>
       </ul>
-    </div>
+      <div class="nav-item dropdown mobile-nav-bar">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <li class="dropdown-item" onclick="onClickMenu('about')">about</li>
+          <li class="dropdown-item" onclick="onClickMenu('products')">products</li>
+          <li class="dropdown-item" onclick="onClickMenu('contact')">contact</li>
+        </ul>
+      </div>
   </header>
   <main>
     <!-- ABOUT -->
